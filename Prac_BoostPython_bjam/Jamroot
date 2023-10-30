@@ -1,0 +1,13 @@
+import python ;
+
+lib boost_python3 ;
+
+project
+  : requirements
+    <library>boost_python3
+;
+
+build-project simple ;
+# build-project point ;
+# build-project pypoint ;
+# build-project fakegfx ;

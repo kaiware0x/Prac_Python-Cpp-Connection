@@ -1,0 +1,6 @@
+project simple
+  : requirements
+    <location>.
+  ;
+
+python-extension simple : simple.cpp ;

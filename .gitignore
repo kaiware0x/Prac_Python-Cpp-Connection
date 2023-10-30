@@ -1,0 +1,6 @@
+*.user
+Prac_CallCppFromPython/build/*
+Prac_CallCppFromPython/dist/*
+Prac_CallCppFromPython/mysolver.egg-info/*
+Prac_CallCppFromPython/venv/*
+Prac_CallPythonFromCpp/venv/*
