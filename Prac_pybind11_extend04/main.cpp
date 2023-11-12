@@ -17,7 +17,7 @@ struct Widget {
     int foo(int x, float y) const { return 2; }
 };
 
-PYBIND11_MODULE(extend4, m)
+PYBIND11_MODULE(extend04, m)
 {
     py::class_<Pet>(m, "Pet")
         .def(py::init<const std::string &, int>())

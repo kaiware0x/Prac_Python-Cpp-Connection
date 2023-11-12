@@ -12,7 +12,7 @@ int add_default(int i = 1, int j = 2)
     return i + j;
 }
 
-PYBIND11_MODULE(extend1, m)
+PYBIND11_MODULE(extend01, m)
 {
     /// optional module docstring
     m.doc() = "pybind11 example plugin";

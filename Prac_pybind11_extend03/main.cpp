@@ -20,16 +20,16 @@ struct PolymorphicDog : PolymorphicPet {
     std::string bark() const { return "woof!"; }
 };
 
-PYBIND11_MODULE(extend3, m)
+PYBIND11_MODULE(extend03, m)
 {
     auto pet_class = py::class_<Pet>(m, "Pet");
     pet_class.def(py::init<const std::string &>());
     pet_class.def_readwrite("name", &Pet::name);
 
-    /// Method 1: template parameter:
-    //    auto dog_class = py::class_<Dog, Pet /* <- specify C++ parent type */>(m, "Dog");
-    /// Method 2: pass parent class_ object:
-    auto dog_class = py::class_<Dog>(m, "Dog", pet_class);
+    /// Way 1: template parameter:
+    auto dog_class = py::class_<Dog, Pet /* <- specify C++ parent type */>(m, "Dog");
+    /// Way 2: pass parent class_ object:
+    //    auto dog_class = py::class_<Dog>(m, "Dog", pet_class);
     dog_class.def(py::init<const std::string &>());
     dog_class.def("bark", &Dog::bark);
 

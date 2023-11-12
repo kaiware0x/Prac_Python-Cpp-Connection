@@ -56,7 +56,7 @@ void set(T t)
     std::cout << "set: " << t << std::endl;
 }
 
-PYBIND11_MODULE(extend6, m)
+PYBIND11_MODULE(extend06, m)
 {
     ///---------------------------------------------------------
     /// https://pybind11.readthedocs.io/en/stable/advanced/functions.html#return-value-policies

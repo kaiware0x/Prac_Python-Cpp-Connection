@@ -16,7 +16,7 @@ struct Pet {
     Attributes  attr;
 };
 
-PYBIND11_MODULE(extend5, m)
+PYBIND11_MODULE(extend05, m)
 {
     py::class_<Pet> pet_class(m, "Pet");
 

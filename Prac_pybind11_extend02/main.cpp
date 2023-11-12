@@ -17,7 +17,7 @@ private:
     std::string name_ro = "Read only name";
 };
 
-PYBIND11_MODULE(extend2, m)
+PYBIND11_MODULE(extend02, m)
 {
     /// クラスのExport。dynamic_attrで動的プロパティ設定を有効にできる.
     auto pet_class = py::class_<Pet>(m, "Pet", py::dynamic_attr());
