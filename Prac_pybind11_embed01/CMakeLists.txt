@@ -13,4 +13,4 @@ target_link_libraries(${PROJECT_NAME} PRIVATE
     pybind11::embed
 )
 
-my_link_python(${PROJECT_NAME})
+linkPython(${PROJECT_NAME})

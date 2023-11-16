@@ -14,4 +14,4 @@ pybind11_add_module(extend01 main.cpp)
 #    VISIBILITY_INLINES_HIDDEN ON
 #)
 
-my_link_python(extend01)
+linkPython(extend01)
